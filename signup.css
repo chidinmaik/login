@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(to right, navy, orange);
+}
+#container{
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+#container .title{
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+}
+#container .title::before{
+  content: "";
+  position: absolute;
+  left: 100px;
+  bottom: 0;
+  height: 2px;
+  width: 90px;
+  border-radius: 5px;
+  background: linear-gradient(to left, navy,orange);
+}
+/*Form styling**/
+
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px 0 12px 0;
+}
+ .input-box{
+  margin: 3px;
+  margin-bottom: 15px;
+  width: 50%;
+}
+ .details{
+  display: block;
+  font-weight: 900;
+  color: navy;
+  margin-bottom: 5px;
+}
+ input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 30px;
+  padding-left: 15px;
+  border: none;
+  background: whitesmoke;
+  box-shadow:.5px 5px 5px 2px lightgray;
+  transition: all 0.3s ease;
+}
+input:hover {
+  background-color: orange;
+}
+
+input:focus,
+input:valid{
+  border-color: #9b59b6;
+}
+
+
+ /*.category{
+   display: flex;
+   width: 80%;
+   margin: 14px 0 ;
+   justify-content: space-between;
+ }
+ form .category label{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ /*.dot{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: ;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+ #dot-1:checked ~ .category label .one,
+ #dot-2:checked ~ .category label .two,
+ #dot-3:checked ~ .category label .three{
+   background: navy;
+   border-color: orange;
+ }
+ form input[type="radio"]{
+   display: none;
+   background-color: navy;
+ } */
+ .button{
+   height: 45px;
+   margin: 35px 0
+ }
+  .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background-image: linear-gradient(to left, navy, orange );
+ }
+ form .button input:hover{
+  /* transform: scale(0.99); */
+  background: green;
+  }
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category{
+    width: 100%;
+  }
+  .content form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+  }
+  @media(max-width: 459px){
+  .container .content .category{
+    flex-direction: column;
+  }
+}
+
+footer{
+position: absolute;
+bottom:10px;
+}

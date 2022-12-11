@@ -1,0 +1,170 @@
+root {
+  --body_gradient_left: #7200d0;
+  --body_gradient_right: #c800c1;
+  
+  --form_bg: #ffffff;
+  --input_bg: #e5e5e5;
+  --input_hover: #eaeaea;
+  --submit_bg: #1fcc44;
+  --submit_hover: #40e263;
+  --icon_color: #6b6b6b;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+ 
+  height: 100vh;
+  font-family: 'Cabin';
+  background-image: linear-gradient(to left, navy,orange);
+    
+/**    var(--body_gradient_left),
+    var(--body_gradient_right;**/
+  display: flex;
+}
+#container {
+  width: 1000px;
+  height: 650px;
+  margin: auto;
+  background-color: #ffffff;
+  background-opacity: 10%;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5vw;
+  padding: 5vh 15px;
+}
+
+
+.image {
+  /* center the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.image img {
+  box-shadow: 5px 5px 5px 2px lightgray;
+  border-radius: 50%;
+}
+
+/*form styling begins*/
+.right {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+  padding: 1% 1%;
+}
+
+
+.forminput{
+  background-color: whitesmoke;
+   display: #e5e5e5;
+  align-items: center;
+  padding-left: 11px;
+  padding-top: 15px;
+  color: black;
+  height:55px;
+border-radius:30px;
+  box-shadow: 5px 5px 5px 2px lightgrey
+}
+
+
+.forminput:hover {
+  background-color: orange;
+}
+
+#input_submit {
+  height: 45px;
+  border-radius: 50px;
+  width: 100%;
+  background-image: linear-gradient(to left, navy,orange);
+  box-shadow: 5px 5px 5px 2px lightgrey;
+}
+.input_field {
+  color: slategray;
+  background-color: inherit;
+  width: 90%;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: 300;
+/*  text-shadow: 1px 1px 1px black;*/
+  padding-left: 30%;
+  font-family: Montserrat;
+}
+
+
+
+.input_field:hover,
+.input_field:focus {
+  outline: none;
+}
+#input_submit {
+  background-color: navy;
+  padding-left: 0;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+
+#input_submit:hover {
+  background-color: green;
+  transition: background-color, 1s;
+  cursor: pointer;
+}
+
+h1,
+span {
+  text-align: center;
+ color:navy;
+}
+
+
+#text {
+  display: block;
+  position: relative;
+  top: 0px;
+  left:0px;
+  text-align: center ;
+}
+
+a {
+  text-decoration: none;
+  color: navy;
+  font-weight: 300;
+}
+a:hover {
+  color: green;
+}
+i {
+  color: navy;
+  padding-left: 10px;
+}
+
+footer{
+  position: absolute ;
+  bottom: 0px;
+}
+
+@media(max-width: 459px){
+  .image img{
+    height:30%;
+    width: 50%;
+    border-radius: 50%
+    margin: 0px 0px 0px 0px;
+    padding: none;
+    justify-content: top;
+    align-content: top;
+    position: absolute;
+    top: 50px;
+  }
+  input_field {
+
+  width: 100%;
+  }
+}
