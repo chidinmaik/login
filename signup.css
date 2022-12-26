@@ -14,6 +14,7 @@ body{
   background: linear-gradient(to right, navy, orange);
 }
 #container{
+  margin-top: 100px;
   max-width: 700px;
   width: 100%;
   background-color: #fff;
@@ -37,6 +38,7 @@ body{
   border-radius: 5px;
   background: linear-gradient(to left, navy,orange);
 }
+
 /*Form styling**/
 
 .content form .user-details{
@@ -155,6 +157,7 @@ form .user-details .input-box{
 }
 
 footer{
-position: absolute;
+
+margin-bottom:  2px;
 bottom:10px;
 }
