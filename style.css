@@ -27,11 +27,10 @@ body {
   display: flex;
 }
 #container {
-  width: 100%;
-  height: 650px;
+  width: 80%;
+  height: 90%;
   margin: auto;
   background-color: #ffffff;
-  background-opacity: 10%;
   border-radius: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -155,7 +154,7 @@ footer{
   .image img{
     height:30%;
     width: 50%;
-    border-radius: 50%
+    border-radius: 50%;
     margin: 0px 0px 0px 0px;
     padding: none;
     justify-content: top;
@@ -167,4 +166,22 @@ footer{
 
   width: 100%;
   }
+}
+
+
+@media (min-width: 720px ) 
+and (max-width:2000px ) 
+{
+#container {
+  width: 60%;
+  height: 90%;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5vw;
+  padding: 5vh 15px;
+}
+
 }
